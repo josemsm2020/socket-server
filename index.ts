@@ -6,7 +6,8 @@ import Server from './classes/server';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
-const server =  new Server();
+//const server =  new Server();
+const server =  Server.instance;
 
 //IMPORTANTE: bodyParser se tiene que configurar antes de la configuración 
 //de las rutas porque aquí ya lo vamos a estar usando
